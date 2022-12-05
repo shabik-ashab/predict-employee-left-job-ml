@@ -19,5 +19,10 @@ clean_up_values = {
     }
 }
 
+# dummies for department
 data.replace(clean_up_values, inplace=True)
-print(data)
+# print(data)
+
+dummies = pd.get_dummies(data.Department)
+print(dummies)
+
